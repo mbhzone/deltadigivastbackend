@@ -1,0 +1,32 @@
+// Role enum: employee permission control
+enum Role {
+  ADMIN
+  MANAGER
+  EMPLOY
+}
+
+// Role enum: employee permission control
+enum STATUS {
+  ACTIVE
+  BLOCK
+}
+// Designation enum: employee position
+enum Designation {
+GRAPHICS_DESIGNER
+VIDEO_EDITOR
+WEB_DEVELOPER
+CINEMATOGRAPHER
+CONTENT_WRITER
+VOICE_ARTIST
+DIGITAL_MARKETER
+CREATIVE_DIRECTOR
+FOUNDER_AND_CEO
+GENERAL_MANAGER
+FIELD_MARKETING_EXECUTIVE
+}
+
+enum CourseStatus {
+  DRAFT
+  PUBLISHED
+  ARCHIVED
+}
