@@ -8,6 +8,7 @@ interface IPortfolioData {
   description: string;
   imageUrl?: string;
   videoUrl?: string;
+  websiteLiveLink?: string;
 }
 
 const createPortfolio = async (payload: IPortfolioData) => {
