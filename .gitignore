@@ -1,6 +1,14 @@
+<<<<<<< HEAD
 node_modules
 dist
 
 /src/generated
 config.bat
 .env
+=======
+node_modules
+dist
+
+/src/generated
+config.bat
+>>>>>>> f9526f56e9ec8d19a15cfc38538b53d7db04e724
