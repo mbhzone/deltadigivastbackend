@@ -4,7 +4,6 @@ dist
 
 /src/generated
 config.bat
-.env
 =======
 node_modules
 dist

